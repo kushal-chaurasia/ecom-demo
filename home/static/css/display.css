@@ -1,0 +1,115 @@
+.header{
+    height: 5rem; 
+    background-color: rgb(236, 233, 233);
+    border-radius: .5em;
+    box-shadow: gray;
+    padding: 1em;
+    padding-left: 2em;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.mid{
+background-color:  blue;
+height: 18em;
+margin-top: 5em;
+}
+.section {
+display: inline-block;
+width: 12em;
+height: 12em;
+border-radius: 50rem;
+margin: auto;
+
+}
+.section-card{
+display: inline-block; 
+width: 20em; 
+margin: auto;
+}
+.section-title{
+display: block;
+margin-left: -3em;
+margin-top: .5em ;
+font: 1.8em sans-serif;
+color: white;
+font-weight: bold;
+}
+.container2 {
+    width: 100%;
+    height: auto;
+  }
+  .slider {
+    height: 300px;
+    width: max-content;
+    margin: auto;
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  .slider .slide {
+    width: 275px;
+    height: 200px;
+    
+    display: none;
+    font-size: 50px;
+    z-index: 2;
+    border-radius: 2px;
+    padding-top: 100px;
+    box-shadow: 0px 15px 10px -10px lightgray;
+  }
+  .slider .slide:nth-child(1) {
+    display: block;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    font-size: 20px;
+    border: none;
+    padding: 15px 5px;
+    color: white;
+    background-color: #1f1f1f;
+    cursor: pointer;
+  }
+  .prev:focus,
+  .next:focus {
+    outline: none;
+  }
+  .prev:hover,
+  .next:hover {
+    background: powderblue;
+  }
+  .next {
+    display: block;
+    right: 5px;
+    top: 150px;
+  }
+  .prev {
+    display: block;
+    left: 5px;
+    top: 150px;
+  }
+  .before,
+  .after {
+    position: absolute;
+    display: block;
+    height: 165px;
+    width: 200px;
+    padding-top: 100px;
+    border-radius: 2px;
+    font-size: 40px;
+    box-shadow: 0px 15px 10px -10px lightgray;
+    margin-top: 20px;
+  }
+  .before {
+    margin-left: -180px;
+  }
+  .after {
+    margin-left: 260px;
+  }
+  .add-view{
+    height: 10em;
+    border: 4px blue;
+  }

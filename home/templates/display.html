@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/display.css'%}">
+<style>
+
+</style>
+<style>
+     @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+</style>
+<div class="col-md-2 header" ></div>
+<div class="col-md-2 header" >Fashion Products</div>
+<div class="col-md-2 header" >Skin Care Products</div>
+<div class="col-md-2 header" >Beauty Products</div>
+<div class="col-md-2 header" >Real Estate</div>
+<div class="col-md-2 header" ></div>
+
+<div class="container-carousel">
+  <div class="slider">
+    {% for data in carousel %}
+    <div class="slide"> <img src="/media/{{data.image}}" alt="" srcset=""></div>
+    {% endfor %}
+    
+  </div>
+  <div class="buttons">
+    <button style ="margin-top: 8em; margin-left: 5em;"class="prev" onclick="prev()">
+      <i class="fa fa-angle-left"></i></button>
+    <button style ="margin-top: 8em; margin-right: 5em;"class="next" onclick="next()">
+      <i class="fa fa-angle-right"></i></button>
+  </div>
+  <div class="indicators">
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+    <div class="indicator"></div>
+  </div>
+</div>
+
+
+<div class="mid row">
+  <div style="display: inline-block; width: 20rem;"></div>
+  {% for data in section %}
+  <div class="section-card">
+  <img src="/media/{{data.image}}" alt="" class="section"  >
+  <span class="section-title" >{{data.title}}</span>
+  </div>  
+  {% endfor %}
+  <div style="display: inline-block; width: 20rem;"></div>
+
+  <div class="container my-5">
+    {% for data in add %}
+    <div style="display: inline-block; margin: auto; margin-left: 10em; border: 2px solid blue; border-radius: 5px;">
+      <h3>{{data.quotation}}</h3>
+      <b><hr style="color: rgb(4, 4, 88); height: .2em;"></b>
+      <img src="/media/{{data.product.image}}" alt=""  width="200" height="250">
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+<script src="{% static 'js/carousel.js'%}"></script>
+{% endblock %}

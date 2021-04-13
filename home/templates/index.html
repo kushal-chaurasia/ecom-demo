@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/index.css'%}">
+<style>
+
+.first {
+    background-image: url("{%static 'images/home_image.jpg' %}");
+    background-size: cover;
+    height: 587px ;
+    background-repeat: no-repeat;
+
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="first">
+    <h1>Lorem ipsum Lorem ipsum <br>
+    Lorem ipsum Lorem ipsum </h1>
+    <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br>
+    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+    
+</div>
+
+{% endblock %}

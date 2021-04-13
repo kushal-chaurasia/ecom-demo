@@ -1,0 +1,27 @@
+.root{
+    border: 2px solid rgb(196, 188, 188);
+}
+li{
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    
+}
+#heading{
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2em;
+    margin-top: 2em;
+    font-weight: bold;
+}
+.card-text{
+    font-size: medium;
+    color: rgb(54, 149, 187);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: .5em;
+}
+.card-title{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
